@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!--one bean object with Student class -->
+	<bean id="student" class="hello_spring4.cdt.Student">
+		<property name="stuName" value="virat kohli"></property>
+		<property name="stuId" value="18"></property>
+		<property name="avgOfMarks" value="100.00"></property>
+		<property name="passedOutYear" value="2023"></property>
+		<property name="isSelected" value="true"></property>
+	</bean>
+	<!--another bean object same student class -->
+	<bean id="student1" class="hello_spring4.cdt.Student">
+		<property name="stuName" value="Silar Shaik"></property>
+		<property name="stuId" value="20"></property>
+		<property name="avgOfMarks" value="95.00"></property>
+		<property name="passedOutYear" value="2023"></property>
+		<property name="isSelected" value="true"></property>
+	</bean>
+</beans>

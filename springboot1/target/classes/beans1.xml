@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+     <!--student1 details-->
+	<bean id="silar" class="com.springboot1.Student">
+		<property name="studentID" value="101"></property>
+		<property name="studentName" value="Shaik Mohammad Silar"></property>
+		<property name="mobileNumber" value="9866248875"></property>
+	
+	</bean>
+	 <!--student2 details-->
+	<bean id="narsi" class="com.springboot1.Student">
+		<property name="studentID" value="102"></property>
+		<property name="studentName" value="Poppusani Narsi Reddy"></property>
+		<property name="mobileNumber" value="7856249524"></property>
+		
+	</bean>
+    <!--product1 details-->
+	<bean id="home1" class="com.springboot1.Address">
+		<constructor-arg value="Guntur"></constructor-arg>
+		<constructor-arg value="522019"></constructor-arg>
+		<constructor-arg value="India"></constructor-arg>
+	</bean>
+	  <!--product2 details-->
+	<bean id="home2" class="com.springboot1.Address">
+		<constructor-arg index="2" value="India"></constructor-arg>
+		<constructor-arg index="0" value="puttaparthi"></constructor-arg>
+		<constructor-arg index="1" value="522101"></constructor-arg>
+	</bean>
+
+</beans>

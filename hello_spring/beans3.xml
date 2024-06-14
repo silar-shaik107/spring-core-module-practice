@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="student1" class="hello_spring3.dt.Student">
+	   <property name="stuName" value="Shaik Mohammad Silar"></property>
+	   <property name="stuId" value="107"></property>
+	   <property name="avgOfMarks" value="95.00"></property>
+	   <property name="passedOutYear" value="2023"></property>
+	   <property name="isSelected" value="true"></property>
+	   
+	</bean>
+	  
+
+</beans>

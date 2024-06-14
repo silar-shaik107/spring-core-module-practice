@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="student" class="com.spring.example.di.si.ci.Student">
+		<property name="studentid" value="101"></property>
+		<property name="studentName" value="shaik Mohammad Silar"></property>
+		<property name="collegeName"
+			value="Narasaraopeta Engineering College"></property>
+	</bean>
+	<bean id="student1" class="com.spring.example.di.si.ci.Student">
+		<property name="studentid" value="102"></property>
+		<property name="studentName" value="Battula Sarath reddy"></property>
+		<property name="collegeName"
+			value="Narasaraopeta Engineering College"></property>
+	</bean>
+
+	<bean id="address" class="com.spring.example.di.si.ci.Address">
+		<property name="city" value="Guntur"></property>
+		<property name="pincode" value="522019"></property>
+		<property name="country" value="India"></property>
+	</bean>
+	<bean id="address1" class="com.spring.example.di.si.ci.Address">
+		<property name="city" value="Banglore"></property>
+		<property name="pincode" value="522211"></property>
+		<property name="country" value="India"></property>
+	</bean>
+	<bean id="student2" class="com.spring.example.di.si.ci.Student">
+		<property name="studentid" value="101"></property>
+		<property name="studentName" value="shaik Mohammad Silar"></property>
+		<property name="collegeName"
+			value="Narasaraopeta Engineering College"></property>
+		<property name="address" ref="address"></property>
+	</bean>
+
+	<bean id="student3" class="com.spring.example.di.si.ci.Student">
+		<property name="studentid" value="102"></property>
+		<property name="studentName" value="Battula Sartah Reddy"></property>
+		<property name="collegeName"
+			value="Narasaraopeta Engineering College"></property>
+		<property name="address" ref="address"></property>
+	</bean>
+
+	<bean id="employe" class="com.spring.example.di.si.ci.Employee">
+		<property name="empId" value="103"></property>
+		<property name="empName" value="Poppusani Narsi Reddy"></property>
+		<property name="empSalary" value="50000.00"></property>
+		<property name="address" ref="address1"></property>
+	</bean>
+
+
+	<!--Product class -->
+	<bean id="product" class="com.spring.example.di.si.ci.Product">
+		<property name="productId" value="111"></property>
+		<property name="productName">
+			<list>
+				<value>I phone</value>
+				<value>Realmi</value>
+				<value>Redmi</value>
+				<value>Samsung</value>	
+				<value>Poco</value>
+			</list>
+		</property>
+		<property name="phoneNumber">
+		<set>
+		       <value>9866248875</value>
+		       <value>9010661726</value>
+		       <value>9390168682</value>
+		       <value>7815487925</value>
+		       <value>9865245785</value>
+		</set>
+		</property>
+		<property name="productItems">
+		<map>
+		<entry key="1" value="iphone x10"/>
+		<entry key="2" value="realmi narzo 20 pro"/>
+		<entry key="3" value="redmi note 9"/>
+		<entry key="4" value="samsung gellaxy"/>
+		<entry key="5" value="poco s20"/>
+		</map>
+		</property>
+		<property name="isOrderSuccess" value="true"></property>
+
+	</bean>
+</beans>

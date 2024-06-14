@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="iphone" class="com.spring.di.ci.Product">
+    
+    <!--int productId, String productName, double price -->
+	<constructor-arg value="101"></constructor-arg>
+	<constructor-arg value="Apple iphone 15"></constructor-arg>
+	<constructor-arg value="150000.00"></constructor-arg>
+	</bean>
+	<bean id="Realmi" class="com.spring.di.ci.Product">
+    
+    <!--int productId, String productName, double price -->
+	<constructor-arg index="0" value="102"></constructor-arg>
+	<constructor-arg index="2" value="25000.00"></constructor-arg>
+	<constructor-arg index="1" value="Realmi Narzo 20 Pro"></constructor-arg>
+	</bean>
+	
+	<bean id="add1" class="com.spring.di.ci.Address">
+	<property name="flatNo" value="15"></property>
+	<property name="houseName" value="Shaik"></property>
+	<property name="mobileNumber" value="9866248875"></property>
+	</bean>
+	
+	<bean id="accountdetails" class="com.spring.di.ci.AccountDetails">
+	<constructor-arg name="name" value="Shaik Mohammad Sialr"></constructor-arg>
+	<constructor-arg name="balance" value="15000.00"></constructor-arg>
+	<constructor-arg name="mobile" value="9866248875"></constructor-arg>
+	<constructor-arg name="costumerAddress" ref="add1"></constructor-arg>
+	</bean>
+	
+	
+</beans>

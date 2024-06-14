@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+	<bean id="stu" class="hello_spring1.Student">
+	</bean>
+ 
+	<!--we can create number of instances(or)bean object in same class -->
+	<bean id="s1" class="hello_spring1.Student"></bean>
+	<bean id="s2" class="hello_spring1.Student"></bean>
+
+	  <bean id="student" class="hello_spring2.Student">
+		<property name="studentName" value="Shaik Mohammad Silar"></property>
+		<property name="studentId" value="20475A0107"></property>
+		<property name="clgName" value="Narsaraopeta Engineering College"></property>
+
+	</bean>
+
+</beans>
